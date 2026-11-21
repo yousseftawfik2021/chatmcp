@@ -136,6 +136,8 @@ class _McpToolsState extends State<McpTools> {
   }
 
   List<Widget> _buildMenuItems(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+
     final McpServerProvider provider = Provider.of<McpServerProvider>(context, listen: false);
     final List<Widget> menuItems = [];
 
